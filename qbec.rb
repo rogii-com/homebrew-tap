@@ -7,11 +7,11 @@ class Qbec < Formula
 
   if OS.mac?
     url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.12.2-rogii-darwin-amd64.tar.gz"
-    sha256 "86ec656eb3533167fdf39ce568ebcbb0d5cf642c6f5bd076f627ea8e3fb6e024"
+    sha256 "2d7fb5c6d6da6dd7cd308c4c07cdb17dd042cc58d9b118d22a4c118f1d32628f"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.12.2-rogii-linux-amd64.tar.gz"
-      sha256 "90e627626a38634fb24cffab6d9086c70d4a03a19c179966550dedfaaeba7457"
+      sha256 "06c9b758226f2ec4d2432b520f0c325671ff4d27c25665dbe13ced5d576d46f1"
     end
   end
 
