@@ -5,16 +5,16 @@
 class Qbec < Formula
   desc "Qbec (pronounced like the Canadian province) is a CLI tool that allows you to create Kubernetes objects on multiple Kubernetes clusters or namespaces configured correctly for the target environment in question."
   homepage "https://qbec.io/"
-  version "0.13.4-rogii"
+  version "0.14.0-rogii"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.13.4-rogii-darwin-amd64.tar.gz"
-    sha256 "d48a6eff68c9c00fd6d56f82ca09e0a26f4d82ff090b3c8648a9f213e3468af9"
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.14.0-rogii-darwin-amd64.tar.gz"
+    sha256 "660a7ac0ae5762ba905463cbdcea327e4ed1276086c11affb6e53047f3d61e0f"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.13.4-rogii-linux-amd64.tar.gz"
-    sha256 "979b23fb4b066b0ff65c92326d10433344c83be13fcbdfe4369389e6215bf75e"
+    url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.14.0-rogii-linux-amd64.tar.gz"
+    sha256 "0cdde3db710bf7b2ad394fd51a8eec8046b0140231ca98ab78ee8ef85ba38656"
   end
 
   def install
