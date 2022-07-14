@@ -5,20 +5,20 @@
 class Qbec < Formula
   desc "Qbec (pronounced like the Canadian province) is a CLI tool that allows you to create Kubernetes objects on multiple Kubernetes clusters or namespaces configured correctly for the target environment in question."
   homepage "https://qbec.io/"
-  version "0.15.1-rogii"
+  version "0.15.1-patched-rogii"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-rogii-darwin-arm64.tar.gz"
-      sha256 "64f813a7ed261951ec5d7d6d1690df00e4f0188b6c6370a35a389989ef2a750f"
+      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-patched-rogii-darwin-arm64.tar.gz"
+      sha256 "0b65004b6fbdaa7fc86380a83b629d20f8c7b4d409e57abb5d6047489e5b62f6"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
       end
     end
     if Hardware::CPU.intel?
-      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-rogii-darwin-amd64.tar.gz"
-      sha256 "b0a9f07185ba1e450d8d0a884ea3e436f945517734f11a3a16f2eab23ce6d915"
+      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-patched-rogii-darwin-amd64.tar.gz"
+      sha256 "a014a6ac63b4d9f83c7e6fc6aea1cc00c1193b66853c6b04b6fc5e4b8c161c24"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
@@ -28,16 +28,16 @@ class Qbec < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-rogii-linux-arm64.tar.gz"
-      sha256 "8f5af2a20401680f8043a9a638d79419d6f096e5072384938163bc84b6e05caa"
+      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-patched-rogii-linux-arm64.tar.gz"
+      sha256 "7d1463351d024c5698967379dad9df935794ca131955953facaa188d7c25c4d6"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
       end
     end
     if Hardware::CPU.intel?
-      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-rogii-linux-amd64.tar.gz"
-      sha256 "be1f783f94d0f227432486a86f904114e60d554e6ed43ec98b9b7dd7849be464"
+      url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.1-patched-rogii-linux-amd64.tar.gz"
+      sha256 "efec09ff3fe0aaf7ac5807362b4cfb064ae6a21d43ab32e75797186b84a11cdd"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
