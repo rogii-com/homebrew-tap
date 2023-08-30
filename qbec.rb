@@ -10,7 +10,7 @@ class Qbec < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.2-1-darwin-arm64.tar.gz"
-      sha256 "bdf997f02ff899c07bcba5ce5b16e294d70b5989f131f8817f46e6d536b7bdb4"
+      sha256 "86425e46b1f087833dea38f70d5a683cc7439c1f382f67024bde37ea3f2301df"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
@@ -18,7 +18,7 @@ class Qbec < Formula
     end
     if Hardware::CPU.intel?
       url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.2-1-darwin-amd64.tar.gz"
-      sha256 "a0817aa9646efe7d25b52d25932d6ddd8dd6355132a0c97af4ed85d0c0725577"
+      sha256 "3018a05d29c9939fa37cf973e612eb52590f3e3b1774eba5261727adcc90ea54"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
@@ -29,7 +29,7 @@ class Qbec < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.2-1-linux-arm64.tar.gz"
-      sha256 "1163861d061f23fa6a090ed9cbaf2f2200fe2004b5942014e3ae1975a185844e"
+      sha256 "fd2aa8d9ac43e1a8201a274cbfea70831c56c2817593f5970a1a86248f5800a3"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
@@ -37,7 +37,7 @@ class Qbec < Formula
     end
     if Hardware::CPU.intel?
       url "https://rogii-sre-dist-pub.s3.amazonaws.com/qbec/qbec-0.15.2-1-linux-amd64.tar.gz"
-      sha256 "838ccd66cb03eb4d40559743667094a8d36b0290c05b895534f286b8b27c6df0"
+      sha256 "419e15062f9d3c80e231b53f20b92043e436c61fe093857c0bbfb5757e64a870"
 
       def install
         bin.install ["qbec", "jsonnet-qbec"]
